@@ -20,7 +20,8 @@ function includeHTML() {
             includeHTML();
           }
         }      
-        xhttp.open("GET", file, true);
+        // xhttp.open("GET", file, true);
+        xhttp.open("GET", "pages/" + file, true);
         xhttp.send();
         /*exit the function:*/
         return;
