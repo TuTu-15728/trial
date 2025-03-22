@@ -1,0 +1,14 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.fixed{
+    position: absolute;
+    top: 0;
+}
+
+.homepagecon{
+    margin-top: 200px;
+}
