@@ -122,6 +122,7 @@
     background-color: #5a9e339c;
     border-radius: 11px;
     padding-top: 11px;
+    z-index: 1;
 }
 
 .mobile-nav a{
