@@ -102,7 +102,7 @@ function initMobileMenu() {
 
 
 // Check viewport dimensions
-console.log("[9] Current viewport width:", window.innerWidth);
+// console.log("[9] Current viewport width:", window.innerWidth);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -142,10 +142,10 @@ function initFooterAccordions() {
 
 function setActivePage() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    console.log(currentPage);
+    // console.log(currentPage);
     document.querySelectorAll('.nav-link').forEach(link => {
         const linkPage = link.getAttribute('href').split('/').pop();
-        console.log(linkPage);
+        // console.log(linkPage);
 
         if (currentPage === linkPage) {
             link.classList.add('isActive');
