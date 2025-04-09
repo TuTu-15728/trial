@@ -1,0 +1,215 @@
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+/* System Integration and Maintenance */
+
+.intriMain-container {
+    box-sizing: border-box;
+    margin-top: 80px;
+
+    h1{
+        color: var(--dark-blue);
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.258);
+        letter-spacing: 2px;
+        padding: 2.5rem 1rem;
+    }
+}
+
+.intri-desc{
+    padding: 0 1.5rem;
+    p{
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        /* font-weight: bold; */
+    }
+}
+
+.intri-systems{
+    background: rgba(112, 128, 144, 0.107);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intri-img{
+    padding: 0.5rem;
+    width: 250px;
+}
+
+.intri-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.542);
+}
+
+.intri-types-container{
+    background: white;
+    border-radius: 7px;
+    padding: 1.5rem;
+    h2{
+        text-align: center;
+        color: var(--dark-blue);
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.282);
+        padding-bottom: 1rem;
+    }
+}
+
+.intri-types{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intri-type{
+    background: rgba(53, 117, 169, 0.484);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(2, 2, 61, 0.778);
+
+    h3{
+        color: white;
+        background: rgba(4, 42, 74, 0.523);
+        border-radius: 7px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    p{
+        padding: 0.5rem;
+        /* font-size: 1.2rem; */
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}
+
+.intri-process{
+    padding: 2rem;
+    h2{
+        text-align: center;
+        color: var(--dark-blue);
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.382);
+        
+    }
+    >p{
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+}
+
+.intri-process-steps{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 0 1.5rem;
+    text-align: center;
+    flex-direction: column;
+    P{
+        background: rgba(70, 131, 180, 0.521);
+        border-radius: 7px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.548);
+        padding: 0.5rem;
+    }
+}
+
+.intri-importance{
+    background: rgba(112, 128, 144, 0.074);
+    padding: 2rem;
+    text-align: center;
+    h2{
+        color: var(--dark-blue);
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.353);
+        padding-bottom: 1rem;
+    }
+    ul{
+        list-style-type: none;
+        li{
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+        li::before {
+            content: "✔";
+            position: relative;
+            left: -7px;
+            color: #128605;
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+
+    }
+}
+
+.maintenance{
+    text-align: center;
+    padding: 2rem;
+    h2{
+        padding: 0.5rem;
+        text-transform: uppercase;
+        color: rgb(207, 73, 6);
+        
+        text-shadow: 0 4px 6px rgba(0, 0, 0, 0.348);
+    }
+    p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--dark-blue);
+        letter-spacing: 2px;
+
+    }
+}
+@media (min-width: 992px) {
+    .intri-img{
+        width: 450px;
+    }
+    .intri-types{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .intri-type{
+        width: 25%;
+        /* height: 350px; */
+    }
+    .intri-type:nth-child(3){
+        width: 100%;
+    }
+    .intri-type:nth-child(6){
+        width: 100%;
+    }
+    .intri-type:nth-child(1){
+        flex: 1;
+        height: 250px;
+        p{
+            padding-top: 2rem;
+        }
+    }
+    .intri-type:nth-child(2){
+        flex: 1;
+        height: 250px;
+    }
+    .intri-type:nth-child(4){
+        flex: 1;
+        height: 250px;
+        p{
+            padding-top:   1rem;
+        }
+    }
+    .intri-type:nth-child(5){
+        flex: 1;
+        height: 250px;
+    }
+
+    .intri-process-steps{
+        flex-direction: row;
+    }
+}
