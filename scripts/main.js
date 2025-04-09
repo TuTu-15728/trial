@@ -1,4 +1,4 @@
-console.log("STARTING DEBUGGING");
+// console.log("STARTING DEBUGGING");
 
 // Loading Componets
 async function loadComponents() {
